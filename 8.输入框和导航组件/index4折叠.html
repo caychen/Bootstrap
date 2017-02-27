@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>输入框和导航组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+        <div class="navbar navbar-default">
+            <div class="navbar-header">
+             　<!-- .navbar-toggle样式用于toggle收缩的内容，即nav-collapse collapse样式所在元素 -->
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse"><!--为button添加data-target=".类名/#id名"，究竞是类名还是id名呢？由需要折叠的div来决定-->
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+               </button>
+               <!-- 确保无论是宽屏还是窄屏，navbar-brand都显示 -->
+               <a href="##" class="navbar-brand">慕课网</a>
+          </div>
+          <!-- 保证在窄屏时需要折叠的内容必须包裹在带一个div内，并且为这个div加入collapse、navbar-collapse两个类名，当屏幕宽度小于768px时，div.navbar-responsive-collapse容器里的内容都会隐藏，显示icon-bar图标，当点击icon-bar图标时，再展开。屏幕大于768px时，默认显示。 -->
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="##">网站首页</a></li>
+                    <li><a href="##">系列教程</a></li>
+                    <li><a href="##">名师介绍</a></li>
+                    <li><a href="##">成功案例</a></li>
+                    <li><a href="##">关于我们</a></li>
+                </ul>
+          </div>
+        </div>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

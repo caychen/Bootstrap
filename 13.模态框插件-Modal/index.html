@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>模态框插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+    
+        <!--模态框声明-->
+        <!--fade:使模态框将从上到下、逐渐浮现 -->
+    	<div class="modal fade" id="modal" tabindex="-1">
+            <!--窗口声明-->
+            <!--
+                modal-lg:
+                modal-sm:
+            -->
+            <div class="modal-dialog modal-lg">
+                <!--内容声明-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h3 class="modal-title">Modal title</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>One fine body&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#modal">点击弹出对话框</button>
+
+        <br/><br/>
+        <!--使用栅格系统, 只能使用流式栅格系统-->
+        <button class="btn btn-default" data-toggle="modal" data-target=".modal-container-fluid">流式栅格系统</button>
+        <div class="modal fade modal-container-fluid">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <span class="modal-title">对话框标题</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4 col-xs-6" style="border: 1px solid #000;">
+                                    今天是情人节！
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6" style="border: 1px solid #000;">
+                                    今天是情人节！
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6" style="border: 1px solid #000;">
+                                    今天是情人节！
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6" style="border: 1px solid #000;">
+                                    今天是情人节！
+                                </div>
+                                <div class="col-md-3 col-sm-4 col-xs-6" style="border: 1px solid #000;">
+                                    今天是情人节！
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default">按钮1</button>
+                        <button class="btn btn-default">按钮2</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+
+        <br/><br/>
+        <div class="modal" id="modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-header">Modal - 1</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h3 class="modal-header">Modal - 2</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h3 class="modal-header">Modal - 3</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            data-backdrop:
+                true:点击非对话框处会把对话框关闭
+                false:点击非对话框处不会把对话框关闭,同时非对话框的背景为白色
+                static:点击非对话框处不会把对话框关闭,同时非对话框的背景为灰色(常用)
+        -->
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal1" data-backdrop="true">测试data-backdrop="true"(默认)</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal2" data-backdrop="false">测试data-backdrop="false"</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal3" data-backdrop="static">测试data-backdrop="static"</button>
+        <br/><br/>
+
+        <div class="modal" id="modal4" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                       <h3 class="modal-header">Modal - 4</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modal5" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                       <h3 class="modal-header">Modal - 5</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+            data-keyboard:
+                false:点击esc，不能关闭对话框
+                true:点击esc，能关闭对话框
+        -->
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal4" data-keyboard="false">测试data-keyboard="false"</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modal5" data-keyboard="true">测试data-keyboard="true"</button>
+
+        <br/><br/>
+        <div class="modal" id="modal6" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                       <h3 class="modal-header">Modal - 6</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-default" id="btn1">js打开对话框</button>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+
+            $(function(){
+                //属性
+                $("#modal6").modal({
+                    show: false,
+                    keyboard:false,
+                    backdrop:'static',//true,false
+                });
+
+                //方法
+                $("#btn1").on('click', function(){
+                    $("#modal6").modal('show');
+                });
+
+                //事件
+                $("#modal6").on({
+                    'show.bs.modal': function(){
+                        alert("当调用show方法时立即触发");
+                    },
+                    'shown.bs.modal': function(){
+                        alert("模态框已经全部显示出来后触发");
+                    },
+                    'hide.bs.modal':function(){
+                        alert("当点击关闭模态框时或者调用hide方法时触发");
+                    },
+                    'hidden.bs.modal':function(){
+                        alert("当模态框被完全关闭或者隐藏时触发");
+                    },
+                })
+            })
+            
+        </script>
+    </body>
+</html>

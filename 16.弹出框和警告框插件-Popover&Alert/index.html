@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>弹出框</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <!--
+            popover与tooltip类似
+            animation:
+            delay:
+            html:
+            placement:
+            template:
+            title:弹出框的标题
+            trigger:
+            content:弹出框的内同
+        -->
+
+        <button class="btn btn-danger btn-lg" data-toggle="popover" title="Popover"
+         data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+        >按钮</button>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("button").popover({
+                    placement:'bottom'
+                });
+            });
+        </script>
+    </body>
+</html>

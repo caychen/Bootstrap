@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>轮播插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <center>
+            <div id="myCarousel" class="carousel slide" style="width: 700px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="image/1.jpeg" alt="第一张图片" />
+                    </div>
+                    <div class="item">
+                        <img src="image/2.jpeg" alt="第二张图片" />
+                    </div>
+                    <div class="item">
+                        <img src="image/3.jpg" alt="第三张图片" />
+                    </div>
+                </div>
+                <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+            <button id="cycle" class="btn btn-default">开始轮播</button>
+            <button id="pause" class="btn btn-default">停止轮播</button>
+            <button id="prev" class="btn btn-default">上一个</button>
+            <button id="next" class="btn btn-default">下一个</button>
+            <button id="number" class="btn btn-default">跳到第三条</button>
+
+        </center>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                // $("#myCarousel").carousel({
+                //     interval:1000, //设置自动轮播的间隔时间
+                //     pause:'hover',//暂停轮播事件，默认为hover(悬停)
+                // });
+                
+                //.carousel('cycle'):触发轮播开始
+                $("#cycle").on('click', function(){
+                    $("#myCarousel").carousel('cycle');
+                });
+
+                //.carousel('pause'):触发轮播停止
+                $("#pause").on('click', function(){
+                    $("#myCarousel").carousel('pause');
+                });
+
+                //直接跳到指定
+                $("#number").on('click', function(){
+                    $("#myCarousel").carousel(2);//从0开始
+                });
+
+                //上一个
+                $("#prev").on('click', function(){
+                    $("#myCarousel").carousel('prev');//从0开始
+                });                
+
+                //下一个
+                $("#next").on('click', function(){
+                    $("#myCarousel").carousel('next');//从0开始
+                });
+
+                //事件
+                $("#myCarousel").on('slide.bs.carousel', function(){
+                    alert('执行之前...');
+                });
+
+                $("#myCarousel").on('slid.bs.carousel', function(){
+                    alert('执行之后...');
+                });
+            });
+        </script>
+    </body>
+</html>

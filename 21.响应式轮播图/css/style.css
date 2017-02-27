@@ -1,0 +1,19 @@
+/*
+* @Author: Cay
+* @Date:   2017-02-20 15:10:21
+* @Last Modified by:   Cam
+* @Last Modified time: 2017-02-20 15:27:55
+*/
+@charset "utf-8"
+
+#navbar-collapse ul{
+	margin-top: 0;
+}
+
+#myCarousel{
+	margin: 50px 0 0;
+}
+
+.carousel-inner img{
+	margin: 0 auto;
+}

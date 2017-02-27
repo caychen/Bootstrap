@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>路径、分页标签和徽章组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <h1>路径</h1>
+        <ol class="breadcrumb">
+            <li><a href="">首页</a></li>
+            <li><a href="">产品列表</a></li>
+            <li class="active">韩版</li><!-- 最后一个一般不需要链接，并加入active的类名 -->
+        </ol>
+
+        <h1>分页标签</h1>
+        <ul class="pagination">
+            <li><a href="#">&laquo;</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">&raquo;</a></li>
+        </ul>
+
+        <!-- 两个按钮默认位于center -->
+        <ul class="pager">
+            <li><a href="#">上一页</a></li>
+            <li><a href="#">下一页</a></li>
+        </ul>
+
+        <!-- 使两个按钮位于左侧和右侧 -->
+        <ul class="pager">
+            <li class="previous"><a href="#">上一页</a></li>
+            <li class="next"><a href="#">下一页</a></li>
+        </ul>
+
+        <!-- 标签 -->
+        <h1><span class="label label-default">Default</span></h1>
+        <h2><span class="label label-primary">Primary</span></h2>
+        <h3><span class="label label-success">Success</span></h3>
+        <h4><span class="label label-info">Info</span></h4>
+        <h5><span class="label label-warning">Warning</span></h5>
+        <h6><span class="label label-danger">Danger</span></h6>
+
+        <br/>
+
+        <h1>徽章</h1>
+        <a href="#">信息<span class="badge">10</span></a>
+        <br/>
+        <button class="btn-btn-default">提交
+            <span class="badge">3</span>
+        </button>
+           
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

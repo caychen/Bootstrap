@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>输入框和导航组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a href="" class="navbar-brand">标题</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">资讯</a></li>
+            <li><a href="">产品</a></li>
+            <li><a href="">关于</a></li>
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown">联系
+                <span class="caret"></span>
+                <ul class="dropdown-menu">
+                  <li><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+          <!--将表单放置于 .navbar-form 之内可以呈现很好的垂直对齐-->
+          <form class="navbar-form navbar-right"><!-- 显示在右边还是左边，默认为左边 -->
+            <div class="input-group">
+              <input placeholder="Input" class="form-control"/>
+              <div class="input-group-btn">
+                <button class="form-control">提交</button>
+              </div>
+            </div>
+          </form>
+
+          <!-- 对于不在form表单中的button，需要加上navbar-btn使其在导航条里垂直居中 -->
+          <button class="btn btn-default navbar-btn">按钮</button>
+          <!-- p文本在包裹在navbar-text中，如果需要使用非导航链接，则使用navbar-link，并包裹在p或li标签里 -->
+          <p class="navbar-text">段落<a class="navbar-link">链接</a></p><!-- 不带按钮或者链接 -->
+        </div>  
+      </nav>
+                 
+      <script type="text/javascript" src="../js/jquery.min.js"></script>
+      <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

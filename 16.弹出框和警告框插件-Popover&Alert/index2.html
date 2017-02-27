@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>警告框插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+    	
+        <!-- <div class="alert alert-warning">
+            <button class="close"><span data-dismiss="alert">&times;</span></button>
+            <p>警告:您的浏览器不支持！</p>
+        </div> -->
+
+        <div class="alert alert-warning">
+            <button class="close">
+                <span>&times;</span>
+            </button>
+            <p>警告:您的浏览器不支持！</p>
+        </div>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('span').on('click', function(){
+                    $("div").alert('close');
+                });
+
+                $('div').on({
+                    'close.bs.alert':function(){
+                        alert('1...');
+                    },
+                    'closed.bs.alert':function(){
+                        alert("2...");
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>

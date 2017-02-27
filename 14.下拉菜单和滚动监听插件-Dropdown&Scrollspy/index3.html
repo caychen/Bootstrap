@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>下拉菜单和滚动监听插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-default" id="nav">
+    		<div class="navbar-header">
+    			<a href="#" class="navbar-brand">Logo</a>
+    			<img src="" alt="" />
+    		</div>
+    		<ul class="nav navbar-nav">
+    			<li><a href="#html5">Html5</a></li>
+    			<li><a href="#boostrap">Boostrap</a></li>
+    			<li class="dropdown">
+	    			<a href="#" data-toggle="dropdown">
+	    				JavaScript<span class="caret"></span>
+	    			</a>
+	    			<ul class="dropdown-menu">
+    					<li><a href="#jquery">JQuery</a></li>
+    					<li><a href="#extjs">ExtJS</a></li>
+    					<li><a href="#angularJS">AngularJS</a></li>
+    					<li class="divider"></li>
+    					<li><a href="#">其他</a></li>
+    				</ul>
+	    		</li>
+    		</ul>
+        </nav>
+        
+        <!-- data-offset="0" data-target="#nav" data-spy="scroll" -->
+        <div id="content" style="padding: 0 10px;overflow: auto;height: 200px;position: relative;">
+        	<section class="sec">
+	        	<h4 id="html5">Html5 <a href="#" onclick="removeSec(this);">删除</a></h4>
+	        	<p>HTML5 是下一代 HTML 标准。HTML , HTML 4.01的上一个版本诞生于 1999 年。自从那以后，Web世界已经经历了巨变。HTML5仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。</p>
+        	</section>
+        	<section class="sec">
+        		<h4 id="boostrap">Boostrap</h4>
+        		<p>Bootstrap，来自 Twitter，是目前很受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。 国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+        	</section>
+        	<section class="sec">
+        		<h4 id="jquery">JQuery</h4>
+        		<p>jQuery是一个快速、简洁的JavaScript框架，是继Prototype之后又一个优秀的JavaScript代码库（或JavaScript框架）。jQuery设计的宗旨是“write Less，Do More”，即倡导写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。
+				jQuery的核心特性可以总结为：具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器，如IE 6.0+、FF 1.5+、Safari 2.0+、Opera 9.0+等。</p>
+			</section>
+			<section class="sec">
+				<h4 id="extjs">ExtJS</h4>
+				<p>自动生成行号，支持checkbox全选，动态选择显示哪些列，支持本地以及远程分页，可以对单元格按照自己的想法进行渲染，这些也算可以想到的功能。</p>
+			</section>
+			<section class="sec">
+				<h4 id="angularjs">AngularJS</h4>
+				<p>AngularJS诞生于2009年，由Misko Hevery 等人创建，后为Google所收购。是一款优秀的前端JS框架，已经被用于Google的多款产品当中。AngularJS有着诸多特性，最为核心的是：MVC、模块化、自动化双向数据绑定、语义化标签、依赖注入等等。</p>
+			</section>
+        </div>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        	function removeSec(obj){
+            	//$(obj).parent().parent().remove();
+            	$(obj).parents(".sec").remove();//同上
+            	$("#nav").scrollspy('refresh');
+            }
+
+            $(function(){
+               $("#content").scrollspy({
+               		offset:0,
+               		target:'#nav',
+               });
+
+               // //每当一个新条目被激活后都将由滚动监听插件触发此事件
+               // $("#nav").on('activate.bs.scrollspy', function(){
+               // 		alert("...");
+               // });
+               // 
+               
+            });
+        </script>
+    </body>
+</html>

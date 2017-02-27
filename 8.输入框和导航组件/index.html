@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>输入框和导航组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        
+            <div class="col-md-4 input-group">
+                <input type="text" class="form-control" />
+                <span class="input-group-addon">@</span>
+                <select class="form-control" style="width: 100px;">
+                    <option>qq.com</option>
+                    <option selected>gmail.com</option>
+                    <option>163.com</option>
+                    <option>126.com</option>
+                </select>
+            </div>
+        <br/>
+        <div class="col-md-3 input-group">
+            <input type="text" class="form-control" />
+            <div class="input-group-btn">
+                <button class="btn btn-default">提交</button>
+            </div>
+        </div>
+
+        <br/>
+        <div class="col-md-3 input-group">
+            <input class="form-control input-group"/>
+            <div class="input-group-btn">
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">邮箱
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="">@126.com</a></li>
+                    <li><a href="">@qq.com</a></li>
+                    <li><a href="">@gmail.com</a></li>
+                    <li class="divider"></li>
+                    <li><a href="">@163.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+
+        <!-- 标签页 -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">咨询</a></li>
+            <li><a href="">产品</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+        <br/>
+        <!-- 胶囊式 -->
+        <ul class="nav nav-pills">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">咨询</a></li>
+            <li><a href="">产品</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+        <br/>
+        <!-- 胶囊式，垂直 -->
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">咨询</a></li>
+            <li><a href="">产品</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+        <br/>
+        <!--两端对齐的标签页-->
+        <ul class="nav nav-tabs nav-justified">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">咨询</a></li>
+            <li><a href="">产品</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+        <br/>
+
+        <!--带有下拉菜单-->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="">首页</a></li>
+            <li><a href="">咨询</a></li>
+            <li><a href="">产品</a></li>
+            <li class="dropdown">
+                <a href="" data-toggle="dropdown">
+                    关于
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">关于1</a></li>
+                    <li><a href="">关于1</a></li>
+                    <li><a href="">关于1</a></li>
+                    <li><a href="">关于1</a></li>
+                </ul>
+            </li>
+            <li><a href="">联系</a></li>
+        </ul>
+    	
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

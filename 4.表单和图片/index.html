@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>表单和图片</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+        <!-- 
+            水平排列的表单：在form标签上添加class="form-horizontal"，将 label 标签和控件组水平并排布局
+        -->
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="email" class="col-sm-2 control-label">电子邮件:</label>
+                <div class="col-sm-10">
+                    <input type="email" id="email" placeholder="请输入您的电子邮件" class="form-control"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">密码:</label>
+                <div class="col-sm-10">
+                    <input type="password" id="password" placeholder="请输入您的密码" class="form-control"/>
+                </div>
+            </div>
+        </form>
+
+        <hr/>
+        <!-- 
+            内联表单：在form标签上添加class="form-inline"，使所有表单元素处于一行，如果小于768px，仍然会折叠 
+        -->
+        <form>
+            <!-- 
+                被支持的控件:
+                text、password、datetime、datetime-local、date、month、time、week、number、email、url、search、tel 和 color
+             -->
+            <div class="form-group">
+                <label for="email">电子邮件:</label>
+                <input type="email" id="email" placeholder="请输入您的电子邮件" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <label for="password">密码:</label>
+                <input type="password" id="password" placeholder="请输入您的密码" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">价格:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">￥</div>
+                    <input type="text" placeholder="请输入产品价格" class="form-control"/>
+                    <div class="input-group-addon">.00</div>
+                </div>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"/>体育
+                </label>
+            </div>
+            <div class="checkbox disabled">
+                <label >
+                    <input type="checkbox" disabled/>音乐<!--禁用-->
+                </label>
+            </div>
+
+            <!-- 内联,只需要在label上添加class="xxx-inline" -->
+            <label class="checkbox-inline">
+                <input type="checkbox"/>读书
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox"/>购物
+            </label>
+            <label class="checkbox-inline disabled">
+                <input type="checkbox" disabled />睡觉
+            </label>
+
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="male" />男
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="gender" value="female" />女
+                </label>
+            </div>
+            <div class="radio disabled">
+                <label>
+                    <input type="radio" name="gender" value="secret" disabled="" />保密
+                </label>
+            </div>
+
+            <label class="radio-inline">
+                <input type="radio" name="gender1" value="male" />男
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="gender1" value="male" />女
+            </label>
+             <label class="radio-inline disabled">
+                <input type="radio" name="gender1" value="secret" disabled />保密
+            </label>
+
+            <select class="form-control" style="margin-top: 20px;">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+            <hr/>
+            <!--
+                校验状态，添加.has-warning、.has-error 或 .has-success类到这些控件的父元素即可。任何包含在此元素之内的 .control-label、.form-control 和 .help-block 元素都将接受这些校验状态的样式。
+            -->
+            <div class="form-group has-success has-feedback">
+                <label class="control-label">Input Success: </label>
+                <input type="text" class="form-control"/>
+                <span class="help-block">输入正确</span><!--表单提示信息-->
+                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+            </div>
+            
+            <div class="form-group has-warning has-feedback">
+                <label class="control-label">Input Warning: </label>
+                <input type="text" class="form-control"/>
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+            </div>
+            <div class="form-group has-error has-feedback">
+                <label class="control-label">Input Error: </label>
+                <input type="text" class="form-control"/>
+                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+            </div>
+
+            <input type="text" class="form-control input-lg" placeholder="input-lg" style="margin-top: 10px;"/>
+            <input type="text" class="form-control input-sm" placeholder="input-sm" style="margin-top: 10px;"/>
+            <select class="form-control input-lg" style="margin-top: 10px;">
+                <option>1 input-lg</option>
+                <option>2 input-lg</option>
+                <option>3 input-lg</option>
+                <option>4 input-lg</option>
+                <option>5 input-lg</option>
+            </select>
+            <select class="form-control input-sm" style="margin-top: 10px;">
+                <option>1 input-sm</option>
+                <option>2 input-sm</option>
+                <option>3 input-sm</option>
+                <option>4 input-sm</option>
+                <option>5 input-sm</option>
+            </select>
+        </form>
+
+        <hr/>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

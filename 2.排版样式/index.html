@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>排版样式</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <p>Bootstrap 框架</p>
+        <p class="lead">Bootstrap框架</p><!-- .lead 类可以让段落突出显示 -->
+        <p>Bootstrap 框架</p>
+        <p>Bootstrap 框架</p>
+
+        <!-- 在标题内还可以包含 <small> 标签或赋予 .small 类的元素，可以用来标记副标题。 -->
+        <h1>Bootstrap <small>标题</small></h1>
+        <h2>Bootstrap <small>标题</small></h2>
+        <h3>Bootstrap <small>标题</small></h3>
+        <h4>Bootstrap <small>标题</small></h4>
+        <h5>Bootstrap <small>标题</small></h5>
+        <h6>Bootstrap <small>标题</small></h6>
+
+        <span class="h1">Bootstrap 标题</span><br/>
+        <span class="h2">Bootstrap 标题</span><br/>
+        <span class="h3">Bootstrap 标题</span><br/>
+        <span class="h4">Bootstrap 标题</span><br/>
+        <span class="h5">Bootstrap 标题</span><br/>
+        <span class="h6">Bootstrap 标题</span><br/>
+        <hr/>
+
+        <p>Bootstrap <mark>标记</mark></p>
+        <hr/>
+
+        <del>被删除的文本</del><br/>
+        <s>无用文本</s><br/>
+        <ins>插入文本</ins><br/>
+        <u>带下划线的文本</u><br/>
+
+        <br/>
+        <small>小号文本</small><br/>
+        <strong>着重文本</strong><br/>
+        <em>倾斜文本</em><br/>
+        <hr/>
+
+        <div style="border: 1px solid black">
+            <p class="text-left">Bootstrap 段落左对齐</p>
+            <p class="text-right">Bootstrap 段落右对齐</p>
+            <p class="text-center">Bootstrap 段落居中对齐</p>
+            <p class="text-nowrap" style="border: 1px solid red;">Bootstrap 段落</p>
+        </div>
+
+    
+        <hr/>
+        <div style="margin-top: 20px;">
+             <p class="text-lowercase">BootStrap 小写</p>
+             <p class="text-uppercase">BootStrap 大写</p>
+             <p class="text-capitalize">bootStrap 首字母大写</p>
+             <p class="initialism">默认大写</p>
+        </div>
+
+        <!-- 缩略语，通过title属性，当鼠标悬停在该处时，会有提示 -->
+        <div style="margin-top: 20px;">
+            <abbr title="bootstrap框架">Bootstrap 框架</abbr>
+        </div>
+        <br/>
+
+        <address>
+          <strong>Twitter, Inc.</strong><br>
+          1355 Market Street, Suite 900<br>
+          San Francisco, CA 94103<br>
+          <abbr title="Phone">P:</abbr> (123) 456-7890
+        </address>
+
+        <address>
+          <strong>Full Name</strong><br>
+          <a href="mailto:#">first.last@example.com</a>
+        </address>
+        <hr/>
+
+        <blockquote>
+            <p>春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</p>
+            <!-- footer标签表示引用脚，其中可以使用cite标签用于提示 -->
+            <footer><cite title="孟浩然">孟浩然</cite></footer>
+        </blockquote>
+
+        <blockquote class="blockquote-reverse"><!-- 使引用呈现的内容右对齐 -->
+            <p>春眠不觉晓，处处闻啼鸟。夜来风雨声，花落知多少。</p>
+            <footer><cite title="孟浩然">孟浩然</cite></footer>
+        </blockquote>
+        <hr/>
+
+        <ul class="list-unstyled list-inline"><!-- list-unstyled:删除默认样式, list-inline:内联样式 -->
+            <li>Bootstrap 框架</li>
+            <li>Bootstrap 框架</li>
+            <li>Bootstrap 框架</li>
+            <li>Bootstrap 框架</li>
+            <li>Bootstrap 框架</li>
+        </ul>
+
+        <!-- 描述列表 -->
+        <dl class="dl-horizontal"><!-- .dl-horizontal 可以让 <dl> 内的短语及其描述排在一行 -->
+            <dt>Bootstrap 框架</dt>
+            <dd>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</dd>
+        </dl>
+        <hr/>
+
+        <!-- 代码 -->
+        For example, <code>&lt;section&gt;</code> should be wrapped as inline.<hr/>
+
+        <!--用户输入 -->
+        press <kbd>Ctrl + C</kbd><hr/>
+
+        <!-- 代码块 -->
+        <pre>Sample text here...</pre>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

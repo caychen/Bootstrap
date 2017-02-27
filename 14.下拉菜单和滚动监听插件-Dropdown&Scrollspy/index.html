@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>下拉菜单和滚动监听插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body>
+
+        <div class="dropdown" id="dropdown">
+            <button class="btn btn-default" data-toggle="dropdown" id="btn">下拉菜单
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">下拉菜单1</a></li>
+                <li><a href="#">下拉菜单2</a></li>
+                <li><a href="#">下拉菜单3</a></li>
+                <li class="divider"></li>
+                <li><a href="#">下拉菜单4</a></li>
+            </ul>
+        </div>
+        
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#dropdown").on({
+                    'show.bs.dropdown':function(){
+                        alert("1...");
+                    },
+                    'shown.bs.dropdown':function(){
+                        alert("2...");
+                    },
+                    'hide.bs.dropdown':function(){
+                        alert("3...");
+                    },
+                    'hidden.bs.dropdown':function(){
+                        alert("4...");
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>工具提示插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <style type="text/css">
+            a:focus{
+                outline: none;
+            }
+        </style>
+    </head>
+    <body style="margin: 100px;">
+
+        <!--
+            animation: 表示是否有动画效果，即渐入渐出效果，默认为true
+            html: 表示title出现的html标签，是否有效，默认为false
+            placement: 表示提示框出现的位置，默认为top，可选值top，bottom，left，right，auto
+                auto表示自动调节显示
+                auto可以配合其他四项，如auto left:表示尽量在left显示，如果left不能完全显示，则在right显示
+            title: 同title属性一致，不过比title级别低
+            trigger: 提示框显示的触发事件，默认为hover focus(悬停)
+            delay: 延时
+            template: 提示框提示模版
+        -->
+        <h2>标签仍然需要$().tooltip();实现</h2>
+        <!-- <a href="#" title="超文件标识符" 
+            data-toggle="tooltip"
+            data-animation="false">Html5</a> -->
+
+        <!-- 使用js脚本 -->
+        <a id="a1" href="#" title="超文件标识符" data-toggle="tooltip">Html5</a>
+
+        <br/>
+        <br/>
+        <a id="a2" href="#" title="超文件标识符2" data-toggle="tooltip">Html5</a>
+        <button class="btn btn-default">按钮</button>
+        <br/>
+        <br/>
+        <a id="a3" href="#" title="超文件标识符3" data-toggle="tooltip">Html5</a>
+        <button class="btn btn-primary">按钮</button>
+
+        <br/>
+        <br/>
+        <a id="a4" href="#" title="超文件标识符4" data-toggle="tooltip">Html5</a>
+        <button class="btn btn-success">按钮</button>
+        
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("a[id='a1']").tooltip({
+                    delay:{
+                        show:100,
+                        hide:100,
+                    },
+                    placement:'left',//提示框显示位置
+                });
+
+                $(".btn-default").click(function(){
+                    $("a[id='a2']").tooltip('show');
+                });
+
+                $("a[id='a3']").tooltip({
+                    trigger:'click',
+                });
+                $(".btn-primary").click(function(){
+                    $("a[id='a3']").tooltip('hide');
+                });
+
+                $(".btn-success").click(function(){
+                    $("a[id='a4']").tooltip('toggle');
+                });
+
+                // $('a').on('show.bs.tooltip', function(){
+                //     alert('...');
+                // });
+                
+            });
+        </script>
+    </body>
+</html>

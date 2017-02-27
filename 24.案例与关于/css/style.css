@@ -1,0 +1,306 @@
+/*
+* @Author: Cay
+* @Date:   2017-02-20 15:10:21
+* @Last Modified by:   Cam
+* @Last Modified time: 2017-02-22 09:39:34
+*/
+@charset "utf-8"
+
+#navbar-collapse ul{
+	margin-top: 0;
+}
+
+#myCarousel{
+	margin: 50px 0 0;
+}
+
+.carousel-inner img{
+	margin: 0 auto;
+}
+
+.tab1{
+	margin: 30px 0;
+	color: #666;
+}
+
+.tab-h2{
+	font-size: 20px;
+	color: #0059B2;
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.tab-p{
+	font-size: 15px;
+	color: #999;
+	text-align: center;
+	letter-spacing: 1px;
+	margin: 20px 0 40px 0;
+}
+
+.tab1 .media-heading{
+	margin: 5px 0 20px;
+}
+
+.tab1 .col{
+	padding: 20px;
+}
+
+/*没有小于768px的@media定义，是因为Bootstrap默认以移动优先原则设计*/
+
+/*小屏幕，平板*/
+@media (min-width: 768px) {
+.tab-h2{
+		font-size: 26px;
+	}
+	.tab-h{
+		font-size: 16px;
+	}
+	.text h3{
+		font-size: 22px;
+	}
+
+	.text p{
+		font-size: 15px;
+	}
+	.jumbotron h1{
+		font-size: 30px;
+	}
+
+	.jumbotron h4{
+		font-size: 16px;
+	}
+	.infor-content h4{
+		font-size: 20px;
+		/*溢出则隐藏*/
+		overflow: hidden;
+		/*规定段落中的文本不进行换行：*/
+		white-space: nowrap;
+		/*当文本溢出包含元素时显示省略号*/
+		text-overflow: ellipsis;
+	}
+	#about h3{
+		font-size: 19px;
+	}
+
+	#about p{
+		font-size: 14px;
+	}
+}
+
+/*中等屏幕，桌面显示器*/
+@media (min-width: 992px) {
+.tab-h2{
+		font-size: 28px;
+	}
+	.tab-h{
+		font-size: 17px;
+	}
+	.text h3{
+		font-size: 24px;
+	}
+
+	.text p{
+		font-size: 16px;
+	}
+	.jumbotron h1{
+		font-size: 34px;
+	}
+
+	.jumbotron h4{
+		font-size: 17px;
+	}
+	.infor-content h4{
+		font-size: 24px;
+	}
+	#about h3{
+		font-size: 20px;
+	}
+
+	#about p{
+		font-size: 15px;
+	}
+}
+
+/*大屏幕，大桌面显示器*/
+@media (min-width: 1200px) {
+	.tab-h2{
+		font-size: 30px;
+	}
+	.tab-h{
+		font-size: 18px;
+	}
+	.text h3{
+		font-size: 26px;
+	}
+
+	.text p{
+		font-size: 18px;
+	}
+	.jumbotron h1{
+		font-size: 37px;
+	}
+
+	.jumbotron h4{
+		font-size: 18px;
+	}
+
+	.infor-content h4{
+		font-size: 28px;
+	}
+	#about h3{
+		font-size: 22px;
+	}
+
+	#about p{
+		font-size: 16px;
+	}
+
+}
+
+#footer{
+	background-color: #666;
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+	color: #eee;
+}
+
+.tab2{
+	background-color: #eee;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.tab2 img{
+	width: 80%;
+	height: 80%;
+}
+.tab3{
+	padding: 40px 0;
+	text-align: center;
+}
+
+.tab3 img{
+	width: 80%;
+	height: 80%;
+}
+
+.text h3{
+	font-size: 20px;
+}
+
+.text p{
+	font-size: 14px;
+}
+
+.jumbotron{
+	background-image: url(../image/bg.jpg);
+	margin: 50px 0 0;
+	color: #ccc;
+}
+
+.jumbotron h1{
+	font-size: 26px;
+	padding-left: 20px;
+}
+
+.jumbotron h4{
+	font-size: 15px;
+	padding-left: 20px;
+}
+
+#information{
+	background-color: #eee;
+	padding: 40px 0;
+}
+
+.infor-content{
+	background-color: #fff;
+	margin: 0 0 20px 0;
+	/*水平位移 垂直位移 模糊半径 阴影颜色*/
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.infor-content img{
+	margin: 12px 0;
+}
+
+.infor-content h4{
+	color: #333;
+	padding-top: 2px;
+	font-size: 20px;
+}
+
+.infor-content p{
+	line-height: 1.6;
+}
+
+.infor-right{
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+.infor-right blockquote{
+	margin: 0;
+	padding: 0;
+}
+
+.infor-right h2{
+	font-size: 20px;
+	color: #333;
+	margin: 5px;
+}
+
+.infor-right h4{
+	font-size: 16px;
+	padding-right: 0;
+	padding-top: 2px;
+}
+
+.infor-right p{
+	font-size: 12px;
+	padding-right: 0;
+}
+
+#case{
+	padding: 40px 0;
+	background-color: #eee;
+	text-align: center;
+}
+
+#case h4{
+	color: #666;
+}
+
+#case p{
+	color: #666;
+	line-height: 1.6;
+}
+
+#about{
+	background-color: #eee;
+	padding: 40px 15px;
+}
+
+#about a{
+	color: #0059B2;
+}
+
+#about .about{
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+#about h3{
+	color: #333;
+	font-size: 18px;
+	border-bottom: 1px solid #eee;
+	padding: 20px 0;
+	margin: 0 0 10px 0;
+}
+
+#about p{
+	line-height: 2;
+	font-size: 13px;
+}

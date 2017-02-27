@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>进度条媒体对象和Well组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+    	
+        <!-- 内嵌效果 -->
+        <!--
+            well-lg:
+            well:
+            well-sm:
+        -->
+        <div class="well"><p>Bootstrap</p></div>
+        <div class="well well-sm"><p>Bootstrap</p></div>
+
+        <!-- 进度条 -->
+        <div class="progress">
+            <div class="progress-bar" style="width: 60%;">
+                60%
+            </div>
+        </div>
+
+        <!--在展示很低的百分比时，如果需要让文本提示能够清晰可见，可以为进度条设置 min-width 属性。-->
+        <div class="progress">
+          <div class="progress-bar"  style="min-width: 2em;">
+            0%
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar"  style="min-width: 2em; width: 2%;">
+            2%
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" style="width: 20%">
+            <span class="sr-only">20% Complete</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger" style="width: 80%">
+            <span class="sr-only">80% Complete (danger)</span>
+          </div>
+        </div>
+
+        <!--斑马线效果-->
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info progress-bar-striped" style="width: 20%">
+            <span class="sr-only">20% Complete</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 80%">
+            <span class="sr-only">80% Complete (danger)</span>
+          </div>
+        </div>
+
+        <div class="progress"><!--动画效果需要在progress-bar-striped上才能看到效果-->
+          <div class="progress-bar progress-bar-striped active" role="progressbar" style="width: 45%">
+            <span class="sr-only">45% Complete</span>
+          </div>
+        </div>
+
+        <!--堆叠效果-->
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 35%">
+            <span class="sr-only">35% Complete (success)</span>
+          </div>
+          <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+            <span class="sr-only">20% Complete (warning)</span>
+          </div>
+          <div class="progress-bar progress-bar-danger" style="width: 10%">
+            <span class="sr-only">10% Complete (danger)</span>
+          </div>
+        </div>
+
+        <hr/>
+        <h1>媒体对象</h1>
+        <div class="media">
+            <!--
+                图片与其他媒体类型可以顶部、中部或底部对齐，默认是顶部对齐。
+                可以在div上加入如下类名：
+                    media-top:
+                    media-middle:
+                    media-bottom:
+            -->
+            <a href="http://www.bootcss.com/" class="media-left">
+                <img class="media-object" src="2.png" alt="Bootstrap" title="Bootstrap" />
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Bootstrap</h4>
+                <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+            </div>
+        </div>
+
+        <hr/>
+        <h1>媒体对象的嵌套</h1>
+        <div class="media">
+            <a href="http://www.bootcss.com/" class="media-left">
+                <img class="media-object" src="2.png" />
+            </a>
+            <div class="media-body">
+                <h3 class="media-heading">Bootstrap</h3>
+                <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+
+                <div class="media">
+                    <a href="http://www.bootcss.com/" class="media-left">
+                        <img class="media-object" src="2.png" />
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Bootstrap</h3>
+                        <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr/>
+        <h1>媒体列表</h1>
+        <ul class="media-list">
+            <li class="media">
+                <a href="http://www.bootcss.com/" class="media-left">
+                    <img src="2.png" class="media-object"/>
+                </a>
+                <div class="media-body">
+                    <h3 class="media-heading">Bootstrap</h3>
+                    <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+                </div>
+            </li>
+            <li class="media">
+                <a href="http://www.bootcss.com/" class="media-left">
+                    <img src="2.png" class="media-object"/>
+                </a>
+                <div class="media-body">
+                    <h3 class="media-heading">Bootstrap</h3>
+                    <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+                </div>
+            </li>
+            <li class="media">
+                <a href="http://www.bootcss.com/" class="media-left">
+                    <img src="2.png" class="media-object"/>
+                </a>
+                <div class="media-body">
+                    <h3 class="media-heading">Bootstrap</h3>
+                    <p>Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。它由Twitter的设计师Mark Otto和Jacob Thornton合作开发，是一个CSS/HTML框架。Bootstrap提供了优雅的HTML和CSS规范，它即是由动态CSS语言Less写成。Bootstrap一经推出后颇受欢迎，一直是GitHub上的热门开源项目，包括NASA的MSNBC（微软全国广播公司）的Breaking News都使用了该项目。国内一些移动开发者较为熟悉的框架，如WeX5前端开源框架等，也是基于Bootstrap源码进行性能优化而来。</p>
+                </div>
+            </li>
+        </ul>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

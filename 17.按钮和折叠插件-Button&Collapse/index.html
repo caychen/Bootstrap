@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>按钮</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <button class="btn btn-default" data-toggle="button" autocomplete="off">按钮</button>
+        
+        <!--单选框-->
+        <br/><br/>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="radio" name="gender" autocomplete="off" value="male" checked/>男
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="gender" autocomplete="off" value="female"/>女
+            </label>
+        </div>
+
+        <!--复选框-->
+        <br/><br/>
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary active">
+                <input type="checkbox" name="gender" autocomplete="off" value="sport" checked/>体育
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" name="gender" autocomplete="off" value="music"/>音乐
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" name="gender" autocomplete="off" value="art"/>艺术
+            </label>
+            <label class="btn btn-primary">
+                <input type="checkbox" name="gender" autocomplete="off" value="computer"/>电脑
+            </label>
+        </div>
+        <br/><br/>
+
+        <!--
+            data-***-text:***可以随便起名
+            在js通过$().button("***");就可以得到该按钮对象
+        -->
+        <button class="btn btn-primary" data-aaa-text="Loading..." data-complete-text="finished..." autocomplete="off">开始上传</button>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("button").on('click', function(){
+                    var $btn = $(this).button('aaa');//
+                    setTimeout(function(){
+                        $btn.button('complete');
+                    }, 2000);
+                })
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bootstrap介绍</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <style type="text/css">
+            .a{
+                border: 1px solid #ccc;
+                background-color: #eee;
+                height: 50px;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body style="margin: 50px;">
+
+        <!-- 情境文本颜色 -->
+        <p class="text-muted">Bootstrap框架</p>
+        <p class="text-primary">Bootstrap框架</p>
+        <p class="text-success">Bootstrap框架</p>
+        <p class="text-info">Bootstrap框架</p>
+        <p class="text-warning">Bootstrap框架</p>
+        <p class="text-danger">Bootstrap框架</p>
+
+        <!-- 情境背景色 -->
+        <p class="bg-primary">Bootstrap框架</p>
+        <p class="bg-success">Bootstrap框架</p>
+        <p class="bg-info">Bootstrap框架</p>
+        <p class="bg-warning">Bootstrap框架</p>
+        <p class="bg-danger">Bootstrap框架</p>
+
+        <!-- 关闭按钮 -->
+        <button class="close">&times;</button>
+        <!-- 三角按钮 -->
+        <span class="caret"></span>
+        <br/>
+
+        <!-- 快速浮动 -->
+        <div class="pull-left a">左浮动</div>
+        <div class="pull-right a">右浮动</div>
+
+        <br/>
+        <hr/>
+        <div class="center-block a">居中</div>
+
+        <hr/>
+        <!-- 清除浮动 -->
+        <div class="pull-left a">左浮动</div>
+        <div class="clearfix"></div>
+        <div class="a">右浮动</div>
+
+        <!-- 显示和隐藏 -->
+        <div class="show">显示</div>
+        <div class="hidden">隐藏</div>
+
+        <!--
+            *:xs, sm, md, lg 其中之一
+            visible-*-block:        对应display:block
+            visible-*-inline:       对应display:inline
+            visible-*-inline-block: 对应display:inline-block
+
+            hidden-*:
+        -->
+
+        <!-- 屏幕小于768px的时候才显示 -->
+        <div class="visible-xs-block a">超小型屏幕激活</div>
+
+        <div class="hidden-xs a">超小型屏幕隐藏</div>
+
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

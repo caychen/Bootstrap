@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>轮播插件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <center>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 700px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="#">
+                            <img src="image/1.jpeg" alt="第一张图片" />
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>Bootstrap</h3>
+                            <p>Bootstrap是一款前端框架。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="image/2.jpeg" alt="第二张图片" />
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>JQuery</h3>
+                            <p>JQuery是一个JavaScript脚本。</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#">
+                            <img src="image/3.jpg" alt="第三张图片" />
+                        </a>
+                        <div class="carousel-caption">
+                            <h3>Apache</h3>
+                            <p>Apache是个基金。</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#myCarousel" data-slide="prev" class="carousel-control left">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#myCarousel" data-slide="next" class="carousel-control right">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </center>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>

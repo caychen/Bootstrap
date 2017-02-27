@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>列表组、面板和嵌入组件</title>
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    </head>
+    <body style="margin: 50px;">
+
+        <h1>列表式</h1>
+        <ul class="list-group">
+            <li class="list-group-item">1、这是首页</li>
+            <li class="list-group-item">2、这是第二页 <span class="badge"><a href="#">10</a></span></li>
+            <li class="list-group-item">3、这是第三页</li>
+            <li class="list-group-item">4、这是第四页</li>
+        </ul>
+        <hr/>
+
+        <h1>链接式</h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item">1、这是首页</a>
+            <a href="#" class="list-group-item active">2、这是第二页 <span class="badge">10</span></a>
+            <a href="#" class="list-group-item">3、这是第三页</a>
+            <a href="#" class="list-group-item">4、这是第四页</a>
+        </div>
+
+        <hr/>
+        <h1>按钮式</h1>
+        <div class="list-group">
+            <button class="list-group-item">1、这是首页</button>
+            <button class="list-group-item active">2、这是第二页 <span class="badge">10</span></button>
+            <button class="list-group-item">3、这是第三页</button>
+            <button class="list-group-item">4、这是第四页</button>
+        </div>
+
+        <hr/>
+        <h1>情境类</h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-success">1、这是首页</a>
+            <a href="#" class="list-group-item list-group-item-info active">2、这是第二页 <span class="badge">10</span></a>
+            <a href="#" class="list-group-item list-group-item-warning">3、这是第三页</a>
+            <a href="#" class="list-group-item list-group-item-danger">4、这是第四页</a>
+        </div>
+
+        <h1>定制内容</h1>
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                <h3 class="list-group-item-heading">内容标题</h3>
+                <p class="list-group-item-text">这里是内容...</p>
+            </a>
+            <a href="#" class="list-group-item">2、这是第二页 <span class="badge">10</span></a>
+            <a href="#" class="list-group-item">3、这是第三页</a>
+            <a href="#" class="list-group-item">4、这是第四页</a>
+        </div>
+
+        <h1>面板</h1>
+        <div class="panel panel-default">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-default</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-default
+            </div>
+            <div class="panel-footer">
+                我是底部-default
+            </div>
+        </div>
+
+        <!-- 情境类 -->
+        <div class="panel panel-primary">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-primary</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-primary
+            </div>
+            <div class="panel-footer">
+                我是底部-primary
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-success</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-success
+            </div>
+            <div class="panel-footer">
+                我是底部-success
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-info</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-info
+            </div>
+            <div class="panel-footer">
+                我是底部-info
+            </div>
+        </div>
+        <div class="panel panel-warning">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-warning</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-warning
+            </div>
+            <div class="panel-footer">
+                我是底部-warning
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <!--标题-->
+            <div class="panel-heading">
+                <h3 class="panel-title">我是标题-danger</h3>
+            </div>
+            <div class="panel-body">
+                我是面板主体-danger
+            </div>
+            <div class="panel-footer">
+                我是底部-danger
+            </div>
+        </div>
+
+        <hr/>
+        <h1>带表格的面版,带有panel-body</h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                数据表格
+            </div>
+
+            <div class="panel-body">
+                简介
+            </div>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+        <h1>带表格的面版,不带有panel-body</h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                数据表格
+            </div>
+            <table class="table">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+
+        <h1>带列表项的面板</h1>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                列表项面板
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">第一页</li>
+                <li class="list-group-item">第二页 <span class="badge">10</span></li>
+                <li class="list-group-item">第三页</li>
+            </ul>
+        </div>
+
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+    	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
